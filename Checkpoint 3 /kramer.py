@@ -1,10 +1,22 @@
-saludo = input ("escribe un saludo: ") .strip().lower ()
 def main():
- while=True:
-    if saludo.startswith ("hola"):
-        print(0$)
-    elif saludo.startswith("h"):
-        print (20$)
-    else 
-        print (100$)
-    break 
+    total = 0  # Total money collected
+
+    while True:
+        greeting = input("Greeting: ").strip().lower()
+
+        if greeting.startswith("hello"):
+            cambio  = 0
+        elif greeting.startswith("h"):
+            cambio  = 20
+        else:
+            cambio = 100
+
+        total += cambio 
+        print(f"recibes : ${cambio }")
+        print(f"Total de totales: ${total}\n")
+
+        if cambio == 100:
+            break
+
+if __name__ == "__main__":
+    main()
