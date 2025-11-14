@@ -6,5 +6,12 @@ universities = {
     "CUCCI": {"majors":22, "cost":1500 ,"location":"chihuahua "},
     "UTPAQUIME ": {"majors":9, "cost":1850 ,"location":"Paquime NCG "},
 
-    ""
 }
+while True: 
+    uni=input("Enter in the name fo a university: ")
+if uni not in universities:
+        print ("invalid input ")
+else:
+    for element in universities[uni]:
+        print (f"{element}: {universities[uni][element]}")
+        break
